@@ -1,3 +1,7 @@
+# Build directories
+/build-*/
+*/build/
+
 # C++ objects and libs
 *.slo
 *.lo
@@ -9,6 +13,21 @@
 *.so.*
 *.dll
 *.dylib
+
+# MinGW / GCC objects
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+
+# Qt Creator
+*.autosave
+*.creator
+*.files
+*.includes
 
 # Qt-es
 object_script.*.Release
@@ -52,3 +71,15 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+# qmake
+Makefile
+*.pro.user
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
